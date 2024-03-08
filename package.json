@@ -1,0 +1,28 @@
+{
+  "name": "express-task",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "format": "pnpm prettier --write \"src/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.4.0",
+    "pnpm": "^8.15.4",
+    "prettier": "^3.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
