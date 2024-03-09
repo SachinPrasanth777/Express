@@ -12,10 +12,12 @@ const validateToken = asyncHandler(async (req, res, next) => {
       req.username = username;
       next();
     } catch (err) {
-      res.status(401).json({ statusCode: 401, Message: "User is unauthorized" });
+      res
+        .status(401)
+        .json({ statusCode: 401, Message: "User is unauthorized" });
     }
   } else {
-    res.status(400).json({statusCode:400,Message:"Unauthorized Jwt"})
+    res.status(400).json({ statusCode: 400, Message: "Unauthorized Jwt" });
   }
 });
 
